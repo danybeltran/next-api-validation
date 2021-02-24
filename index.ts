@@ -64,7 +64,7 @@ interface IValidatorProps {
 
 /** Specify callbacks for different methods made to an endpoint */
 type ValidateType = (handlers: IValidatorProps) => Function;
-interface IValidate extends IValidatorProps, ValidateType {}
+interface IValidate extends IValidator, ValidateType {}
 const RequestMethods = [
   "get",
   "post",

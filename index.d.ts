@@ -11,6 +11,30 @@ declare type RequestValidatorHandlerType = (
   /** Response object */
   Res: ValidateResponse<any>
 ) => void;
+declare type SingleHandler = (
+  /** Handle only requests using one request method */
+  Req: RequestValidatorHandlerType
+) => void;
+interface IValidator {
+  /** Handles a GET request */
+  get?: SingleHandler;
+  /** Handles a POST request */
+  post?: SingleHandler;
+  /** Handles a PUT request */
+  put?: SingleHandler;
+  /** Handles a DELETE request */
+  delete?: SingleHandler;
+  /** Handles a HEAD request */
+  head?: SingleHandler;
+  /** Handles a CONNECT request */
+  connect?: SingleHandler;
+  /** Handles an OPTIONS request */
+  options?: SingleHandler;
+  /** Handles a TRACE request */
+  trace?: SingleHandler;
+  /** Handles a PATCH request */
+  patch?: SingleHandler;
+}
 interface IValidatorProps {
   /** Handles a GET request */
   get?: RequestValidatorHandlerType;
@@ -33,6 +57,6 @@ interface IValidatorProps {
 }
 /** Specify callbacks for different methods made to an endpoint */
 declare type ValidateType = (handlers: IValidatorProps) => Function;
-interface IValidate extends IValidatorProps, ValidateType {}
+interface IValidate extends IValidator, ValidateType {}
 declare const Validate: IValidate;
 export default Validate;
