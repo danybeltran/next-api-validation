@@ -1,6 +1,6 @@
 {
   "name": "next-api-validation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Request validator implemented in Next.js:)",
   "main": "index.js",
   "types": "index.d.ts",
@@ -15,9 +15,6 @@
   ],
   "author": "Dany Beltran",
   "license": "MIT",
-  "dependencies": {
-    "next": "^10.0.7"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danybeltran/next-api-validation.git"
