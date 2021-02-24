@@ -14,8 +14,16 @@
     "next api handler"
   ],
   "author": "Dany Beltran",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "next": "^10.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danybeltran/next-api-validation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danybeltran/next-api-validation/issues"
+  },
+  "homepage": "https://github.com/danybeltran/next-api-validation#readme"
 }
