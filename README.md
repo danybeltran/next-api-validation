@@ -107,4 +107,4 @@ export default validate({
 
 That's it!
 
-You can follow me on Github as [Danybeltran](https://github.com/danybeltran),  I sometimes works on other stuff. Check a similar package made for Vercel APIs: [serverless-request-validator](https://www.npmjs.com/package/serverless-request-validator), also by me. Thanks!
+You can follow me on Github as [Danybeltran](https://github.com/danybeltran),  I sometimes work on other stuff. Check a similar package made for Vercel APIs: [serverless-request-validator](https://www.npmjs.com/package/serverless-request-validator), also by me. Thanks!
