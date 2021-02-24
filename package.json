@@ -1,0 +1,21 @@
+{
+  "name": "next-api-validation",
+  "version": "1.0.0",
+  "description": "Request validator implemented in Next.js:)",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc index.ts -d"
+  },
+  "keywords": [
+    "next api validation",
+    "next api",
+    "api validation",
+    "next api handler"
+  ],
+  "author": "Dany Beltran",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^10.0.7"
+  }
+}
