@@ -15,7 +15,7 @@ app.get((req,res)=>{
 ```
 > That will work only when using a `GET` request
 
-In Next.js (and Vercel) apps, your api are files in a specific order in the project directory, each file with a default export being the actual handler that will handle that request.
+In Next.js (and Vercel) apps, your API are files in a specific order in the project directory, each file with a default export being the actual handler that will handle that request.
 
 First, install the module:
 
@@ -103,8 +103,3 @@ export default validate({
   },
 });
 ```
-> Async handlers work too:), but this is thanks to Next.js itself, not me:P
-
-That's it!
-
-You can follow me on Github as [Danybeltran](https://github.com/danybeltran),  I sometimes work on other stuff. Check a similar package made for Vercel APIs: [serverless-request-validator](https://www.npmjs.com/package/serverless-request-validator), also by me. Thanks!
