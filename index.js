@@ -33,7 +33,7 @@ var Validate = function (handlers) {
             }, sendFile: function (url) {
                 if (url === void 0) { url = ""; }
                 try {
-                    var fileHeadType = mime_types_1.lookup(url);
+                    var fileHeadType = (0, mime_types_1.lookup)(url);
                     if (typeof fileHeadType === "string") {
                         res.writeHead(200, {
                             "Content-Type": fileHeadType.toString()
@@ -55,7 +55,7 @@ var Validate = function (handlers) {
                     var invalidMethodCb = function (req, res) {
                         res
                             .status(405)
-                            .send("Cannot " + requestMethod.toUpperCase() + " " + req.url);
+                            .send("Cannot ".concat(requestMethod.toUpperCase(), " ").concat(req.url));
                     };
                     _handlers[requestMethod] = invalidMethodCb;
                 }
@@ -79,7 +79,7 @@ RequestMethods.forEach(function (requestMethod) {
                 }, sendFile: function (url) {
                     if (url === void 0) { url = ""; }
                     try {
-                        var fileHeadType = mime_types_1.lookup(url);
+                        var fileHeadType = (0, mime_types_1.lookup)(url);
                         if (typeof fileHeadType === "string") {
                             res.writeHead(200, {
                                 "Content-Type": fileHeadType.toString()
@@ -99,7 +99,7 @@ RequestMethods.forEach(function (requestMethod) {
                 handler(req, vResponse);
             }
             else {
-                vResponse.sendStatus(405, "Cannot " + method + " " + req.url);
+                vResponse.sendStatus(405, "Cannot ".concat(method, " ").concat(req.url));
             }
         };
         return responseCb;

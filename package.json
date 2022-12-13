@@ -1,6 +1,6 @@
 {
   "name": "next-api-validation",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Request validator implemented in Next.js:)",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/danybeltran/next-api-validation/issues"
   },
-  "homepage": "https://github.com/danybeltran/next-api-validation#readme"
+  "homepage": "https://github.com/danybeltran/next-api-validation#readme",
+  "dependencies": {
+    "mime-types": "^2.1.35"
+  }
 }
